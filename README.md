@@ -38,6 +38,8 @@ kubectl create secret docker-registry docker-credentials \
     --docker-server=string \
     --namespace default
 ```
+
+***NOTE*** Creating workload with docker registry was not successful as it was timingout downloading source controller. So switched to GCR.
 follow the details mentioned here https://github.com/pivotal/kpack/blob/main/docs/tutorial.md 
 
 ## Create workload using simple-supply-chain
