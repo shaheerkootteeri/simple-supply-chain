@@ -9,6 +9,13 @@ spec:
     templateRef:
       kind: ClusterSourceTemplate
       name: git-source-template
+  - name: image-builder
+    templateRef:
+      kind: ClusterImageTemplate
+      name: kpack-template
+    sources: 
+    - resource: source-provider
+      name: source
   serviceAccountRef:
     name: cartographer-pre-built-sa
     namespace: default

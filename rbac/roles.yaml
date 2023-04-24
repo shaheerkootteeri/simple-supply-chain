@@ -7,9 +7,11 @@ rules:
   - apiGroups:
       - apps
       - source.toolkit.fluxcd.io
+      - kpack.io
     resources:
       - deployments
       - gitrepositories
+      - images
     verbs:
       - list
       - create

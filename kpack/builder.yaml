@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   serviceAccountName: cartographer-pre-built-sa
-  tag: skootteeri/builder
+  tag: gcr.io/kshaheer-playground/supplychaintest/builder
   stack:
     name: base
     kind: ClusterStack
